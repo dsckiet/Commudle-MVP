@@ -1,5 +1,5 @@
 import 'package:commudle/routes/profile_screen.dart';
-import 'package:commudle/widgets/event_card.dart';
+import 'package:commudle/widgets/cards/event_card.dart';
 import 'package:flutter/material.dart';
 
 class RegisteredEvent extends StatefulWidget {

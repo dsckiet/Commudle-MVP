@@ -1,5 +1,5 @@
 import 'package:commudle/routes/profile_screen.dart';
-import 'package:commudle/widgets/member_card.dart';
+import 'package:commudle/widgets/cards/member_card.dart';
 import 'package:flutter/material.dart';
 
 class TeamScreen extends StatefulWidget {

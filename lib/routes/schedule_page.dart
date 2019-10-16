@@ -1,5 +1,5 @@
 import 'package:commudle/routes/profile_screen.dart';
-import 'package:commudle/widgets/schedule_card.dart';
+import 'package:commudle/widgets/cards/schedule_card.dart';
 import 'package:flutter/material.dart';
 
 class SchedulePage extends StatefulWidget {
