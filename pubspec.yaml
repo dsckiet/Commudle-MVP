@@ -1,0 +1,56 @@
+name: commudle
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  simple_animations: ^1.3.3
+  flutter_launcher_icons: "^0.7.3"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter_icons:
+  image_path: "assets/images/commudle-logo.png" 
+  android: true
+  ios: true
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          weight: 400
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 600
+
+  assets:
+    - assets/images/commudle-logo.png
+    - assets/images/introPageImage.png
+    - assets/images/authPageImage.png
+    - assets/images/googlelogo.png
+    - assets/images/gdg_lockup.png
+    - assets/images/eventImageSquare.png
+    - assets/images/upcomingCardBack.png
+    - assets/images/temp-wtm.png
+    - assets/images/hello.png
+    - assets/images/twitter.png
+    - assets/images/github.png
+    - assets/images/linkedin.png
+    - assets/images/profileImage.png
+    - assets/images/eventImage.png
+    - assets/images/oops_network.png
