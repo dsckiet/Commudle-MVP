@@ -1,19 +1,3 @@
-import 'package:flutter/foundation.dart';
-
-// class CommunitiesModel with ChangeNotifier {
-//   List<Communities> communities;
-
-//   CommunitiesModel({this.communities});
-
-//   CommunitiesModel.fromJson(Map<String, dynamic> json) {
-//     if (json['communities'] != null) {
-//       communities = new List<Communities>();
-//       json['communities'].forEach((v) {
-//         communities.add(new Communities.fromJson(v));
-//       });
-//     }
-//   }
-// }
 
 class CommunitiesModel {
   Data data;
