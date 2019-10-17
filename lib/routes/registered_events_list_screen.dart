@@ -1,6 +1,6 @@
 import 'package:commudle/routes/profile_screen.dart';
 import 'package:commudle/routes/registered_event_screen.dart';
-import 'package:commudle/widgets/event_card.dart';
+import 'package:commudle/widgets/cards/event_card.dart';
 import 'package:flutter/material.dart';
 
 class RegisteredEventsList extends StatefulWidget {

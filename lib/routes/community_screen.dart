@@ -2,7 +2,7 @@ import 'package:commudle/routes/about_screen.dart';
 import 'package:commudle/routes/events_screen.dart';
 import 'package:commudle/routes/profile_screen.dart';
 import 'package:commudle/routes/team_screen.dart';
-import 'package:commudle/widgets/sessions_card.dart';
+import 'package:commudle/widgets/cards/sessions_card.dart';
 import 'package:flutter/material.dart';
 
 class CommunityScreen extends StatefulWidget {

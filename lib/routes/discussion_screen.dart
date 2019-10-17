@@ -1,6 +1,6 @@
 import 'package:commudle/routes/profile_screen.dart';
-import 'package:commudle/widgets/discussion_card.dart';
-import 'package:commudle/widgets/sub_discussion_card.dart';
+import 'package:commudle/widgets/cards/discussion_card.dart';
+import 'package:commudle/widgets/cards/sub_discussion_card.dart';
 import 'package:flutter/material.dart';
 
 class DiscussionPage extends StatefulWidget {

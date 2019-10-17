@@ -1,5 +1,5 @@
 import 'package:commudle/routes/profile_screen.dart';
-import 'package:commudle/widgets/speaker_detail_card.dart';
+import 'package:commudle/widgets/cards/speaker_detail_card.dart';
 import 'package:flutter/material.dart';
 
 class SpeakerDetailsScreen extends StatefulWidget {

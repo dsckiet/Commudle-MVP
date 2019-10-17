@@ -1,6 +1,6 @@
 import 'package:commudle/routes/community_screen.dart';
 import 'package:commudle/routes/profile_screen.dart';
-import 'package:commudle/widgets/communities_list_card.dart';
+import 'package:commudle/widgets/cards/communities_list_card.dart';
 import 'package:flutter/material.dart';
 
 class CommunitiesListScreen extends StatefulWidget {

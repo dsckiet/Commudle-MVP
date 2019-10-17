@@ -1,7 +1,7 @@
 import 'package:commudle/routes/profile_screen.dart';
 import 'package:commudle/routes/schedule_page.dart';
 import 'package:commudle/routes/speaker_details_screen.dart';
-import 'package:commudle/widgets/member_card.dart';
+import 'package:commudle/widgets/cards/member_card.dart';
 import 'package:flutter/material.dart';
 
 import 'discussion_screen.dart';
