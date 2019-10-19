@@ -15,11 +15,11 @@ class _SplashScreenState extends State<SplashScreen> {
 
   startTime() async {
     var _duration = new Duration(milliseconds: 2500);
-    return new Timer(_duration, navigationPage);
+    return new Timer(_duration, checkFirstSeen);
   }
 
   void navigationPage() {
-    Navigator.of(context).pushReplacementNamed('/IntroScreen');
+    Navigator.of(context).pushReplacementNamed('/AuthScreen');
   }
 
   Future checkFirstSeen() async {
@@ -40,7 +40,6 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) => animation());
-    checkFirstSeen();
   }
 
   animation() {

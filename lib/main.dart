@@ -71,6 +71,7 @@ class MyApp extends StatelessWidget {
           '/NetworkError': (BuildContext context) => NetworkErrorPage(),
           '/SchedulePage': (BuildContext context) => SchedulePage(),
           '/DiscussionPage': (BuildContext context) => DiscussionPage(),
+          '/NetworkErrorPage': (BuildContext context) => NetworkErrorPage(),
         },
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:commudle/models/communities_model.dart';
+import 'package:commudle/routes/network_error_page.dart';
 import 'package:commudle/widgets/show_dialog.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
@@ -46,8 +47,10 @@ class CommunitiesProviders with ChangeNotifier {
       notifyListeners();
     } on NoSuchMethodError {
       _isDataAvl = false;
-    } on SocketException {
-      ShowDialog().showErrorDialogNetwork(context);
+    } on SocketException  { 
+      Navigator.of(context).push(
+           MaterialPageRoute(builder: (context) => NetworkErrorPage()));
+      //ShowDialog().showErrorDialogNetwork(context);
     } catch (error) {
       print(error.toString());
       throw (error);
