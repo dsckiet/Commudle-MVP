@@ -84,6 +84,7 @@ class _CommunitiesWidgetState extends State<CommunitiesWidget> {
                   "See All",
                   style: TextStyle(
                       fontSize: 14.0,
+                      fontFamily: 'Product Sans',
                       color: const Color(0xFFDB4437),
                       fontWeight: FontWeight.w600),
                 ),
@@ -111,7 +112,7 @@ class _CommunitiesWidgetState extends State<CommunitiesWidget> {
                         'No Data to Show',
                         style: TextStyle(
                           fontSize: 10.0,
-                          fontFamily: 'Montserrat',
+                          fontFamily: 'Product Sans',
                           fontWeight: FontWeight.w600,
                           color: const Color(0xFF707070),
                         ),
@@ -119,7 +120,7 @@ class _CommunitiesWidgetState extends State<CommunitiesWidget> {
                     ),
                   )
                 : Container(
-                    margin: EdgeInsets.symmetric(vertical: 20.0),
+                    margin: EdgeInsets.only(top: 16.0, left: 20.0,bottom: 16.0),
                     height: 100.0,
                     child: Container(
                       child: Consumer<CommunitiesProviders>(
@@ -129,12 +130,12 @@ class _CommunitiesWidgetState extends State<CommunitiesWidget> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context, index) {
                             return Container(
-                              padding: EdgeInsets.only(left: 18.0),
+                              padding: EdgeInsets.only(left: 2.0,right: 2.0),
                               child: InkWell(
                                 child: FittedBox(
                                   child: Container(
                                     padding: EdgeInsets.only(
-                                        bottom: 8, left: 2, right: 2),
+                                        bottom: 8),
                                     child: Card(
                                       shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.all(

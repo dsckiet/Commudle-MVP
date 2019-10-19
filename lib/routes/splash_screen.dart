@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Container(
               child: GestureDetector(
                 child: AnimatedOpacity(
-                  duration: Duration(milliseconds: 2200),
+                  duration: Duration(milliseconds: 2300),
                   opacity: this._opacity,
                   child: DecoratedBox(
                     decoration: BoxDecoration(

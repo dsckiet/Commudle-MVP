@@ -80,12 +80,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   style: Theme.of(context).textTheme.title,
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 6.0),
-                child: Text(
-                  'goelaakash79',
-                  style: Theme.of(context).textTheme.body1,
-                ),
+              Text(
+                'goelaakash79',
+                style: Theme.of(context).textTheme.body1,
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20.0),
@@ -94,12 +91,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   style: Theme.of(context).textTheme.title,
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 6.0),
-                child: Text(
-                  'goelaakash79',
-                  style: Theme.of(context).textTheme.body1,
-                ),
+              Text(
+                'goelaakash79',
+                style: Theme.of(context).textTheme.body1,
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20.0),
@@ -108,12 +102,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   style: Theme.of(context).textTheme.title,
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 6.0),
-                child: Text(
-                  'goelaakash79',
-                  style: Theme.of(context).textTheme.body1,
-                ),
+              Text(
+                'goelaakash79',
+                style: Theme.of(context).textTheme.body1,
               ),
               Container(
                 padding: EdgeInsets.only(top: 28.0, bottom: 20.0),
@@ -128,7 +119,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       style: TextStyle(
                           fontSize: 20.0,
                           fontWeight: FontWeight.bold,
-                          fontFamily: 'Montserrat',
+                          fontFamily: 'Product Sans',
                           color: Colors.white),
                     ),
                   ),

@@ -53,6 +53,7 @@ class _EventCardState extends State<EventCard> {
                             "WTM New Delhi",
                             style: TextStyle(
                               fontSize: 14.0,
+                              fontFamily: 'Product Sans',
                               color: Colors.white,
                               fontWeight: FontWeight.w600,
                             ),
@@ -70,6 +71,7 @@ class _EventCardState extends State<EventCard> {
                         "Web Developer Day-3",
                         style: TextStyle(
                             fontSize: 18.0,
+                            fontFamily: 'Product Sans',
                             color: Colors.white,
                             fontWeight: FontWeight.w600),
                       )
@@ -90,6 +92,7 @@ class _EventCardState extends State<EventCard> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.white,
+                              fontFamily: 'Product Sans',
                               fontSize: 16.0,
                               fontWeight: FontWeight.w600),
                         ),

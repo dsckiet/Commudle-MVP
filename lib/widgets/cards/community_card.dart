@@ -25,8 +25,8 @@ class _CommunityCardState extends State<CommunityCard> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image(
+                  height: 80.0,
                   image: AssetImage('assets/images/gdg_lockup.png'),
-                  width: 80.0,
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 8.0),
@@ -34,6 +34,7 @@ class _CommunityCardState extends State<CommunityCard> {
                     "GDG Dublin",
                     style: TextStyle(
                         fontSize: 16,
+                        fontFamily: 'Product Sans',
                         color: const Color(0xFF707070),
                         fontWeight: FontWeight.w600),
                   ),

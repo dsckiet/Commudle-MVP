@@ -38,7 +38,7 @@ class _SpeakerDetailCardState extends State<SpeakerDetailCard> {
                     'Android Developer',
                     style: TextStyle(
                       fontSize: 11.0,
-                      fontFamily: 'Montserrat',
+                      fontFamily: 'Product Sans',
                     ),
                   ),
                 ],

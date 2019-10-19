@@ -48,7 +48,7 @@ class _DiscussionCardState extends State<DiscussionCard> {
                         '3 days ago',
                         style: TextStyle(
                           fontSize: 10.0,
-                          fontFamily: 'Montserrat',
+                          fontFamily: 'Product Sans',
                           fontWeight: FontWeight.w600,
                           color: const Color(0xFF707070),
                         ),
@@ -62,7 +62,7 @@ class _DiscussionCardState extends State<DiscussionCard> {
                     'Can we integrate hardware with flutter app in this hackathon',
                     style: TextStyle(
                       fontSize: 12.0,
-                      fontFamily: 'Montserrat',
+                      fontFamily: 'Product Sans',
                       fontWeight: FontWeight.w600,
                       color: const Color(0xFF707070),
                     ),
