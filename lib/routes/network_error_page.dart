@@ -23,8 +23,8 @@ class NetworkErrorPage extends StatelessWidget {
                 "Oops!",
                 style: TextStyle(
                   fontSize: 30.0,
-                  fontFamily: 'Montserrat',
-                  fontWeight: FontWeight.w400,
+                  fontFamily: 'Product Sans',
+                  fontWeight: FontWeight.w600,
                   color: const Color(0xFF707070),
                 ),
                 textAlign: TextAlign.center,
@@ -34,12 +34,7 @@ class NetworkErrorPage extends StatelessWidget {
               ),
               Text(
                 "No internet connection",
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontFamily: 'Montserrat',
-                  fontWeight: FontWeight.w500,
-                  color: const Color(0xFF707070),
-                ),
+                style:Theme.of(context).textTheme.title,
                 textAlign: TextAlign.center,
               ),
               SizedBox(
@@ -58,7 +53,7 @@ class NetworkErrorPage extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 22.0,
                           fontWeight: FontWeight.w600,
-                          fontFamily: 'Montserrat',
+                          fontFamily: 'Product Sans',
                           color: Colors.white),
                     ),
                   ),

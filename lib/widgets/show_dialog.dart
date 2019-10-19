@@ -5,10 +5,18 @@ class ShowDialog {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Check your Internet Connection!'),
+        title: Text(
+          'Check your Internet Connection!',
+          style: TextStyle(fontFamily: 'Product Sans'),
+        ),
         actions: <Widget>[
           FlatButton(
-            child: Text('Okay'),
+            child: Text(
+              'Okay',
+              style: TextStyle(
+                fontFamily: 'Product Sans',
+              ),
+            ),
             onPressed: () {
               Navigator.of(context).pop();
             },

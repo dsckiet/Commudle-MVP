@@ -204,6 +204,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                                   'Events',
                                   style: TextStyle(
                                     fontSize: 14,
+                                    fontFamily: 'Product Sans',
                                     fontWeight: FontWeight.bold,
                                     color: const Color(0xFFF1F1F1),
                                   ),
@@ -243,6 +244,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                                   'About',
                                   style: TextStyle(
                                     fontSize: 14.0,
+                                    fontFamily: 'Product Sans',
                                     fontWeight: FontWeight.bold,
                                     color: const Color(0xFFF1F1F1),
                                   ),
@@ -282,6 +284,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                                   'Team',
                                   style: TextStyle(
                                     fontSize: 14.0,
+                                    fontFamily: 'Product Sans',
                                     fontWeight: FontWeight.bold,
                                     color: const Color(0xFFF1F1F1),
                                   ),

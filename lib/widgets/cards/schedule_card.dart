@@ -32,8 +32,8 @@ class _ScheduleCardState extends State<ScheduleCard> {
                 '09:00 AM',
                 style: TextStyle(
                   fontSize: 16.0,
-                  fontFamily: 'Montserrat',
-                  fontWeight: FontWeight.w500,
+                  fontFamily: 'Product Sans',
+                  fontWeight: FontWeight.w600,
                   color: const Color(0xFF4885ED),
                 ),
               ),
@@ -49,8 +49,8 @@ class _ScheduleCardState extends State<ScheduleCard> {
                       "Lets's play with Google Cloud ",
                       style: TextStyle(
                         fontSize: 16.0,
-                        fontFamily: 'Montserrat',
-                        fontWeight: FontWeight.w500,
+                        fontFamily: 'Product Sans',
+                        fontWeight: FontWeight.w600,
                         color: const Color(0xFF0F9D58),
                       ),
                     ),
@@ -61,8 +61,8 @@ class _ScheduleCardState extends State<ScheduleCard> {
                       "By Rohan Mehta ",
                       style: TextStyle(
                         fontSize: 14.0,
-                        fontFamily: 'Montserrat',
-                        fontWeight: FontWeight.w500,
+                        fontFamily: 'Product Sans',
+                        fontWeight: FontWeight.w600,
                         color: const Color(0xFF707070),
                       ),
                     ),

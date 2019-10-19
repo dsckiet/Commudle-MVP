@@ -22,6 +22,7 @@ class _IntroScreenState extends State<IntroScreen> {
               "Commudle",
               style: TextStyle(
                 fontSize: 28.0,
+                fontFamily: 'Product Sans',
                 fontWeight: FontWeight.w800,
                 color: const Color(0xFF707070),
               ),
@@ -42,6 +43,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   "Get Started",
                   style: TextStyle(
                     fontSize: 20.0,
+                    fontFamily: 'Product Sans',
                     fontWeight: FontWeight.bold,
                     color: const Color(0xFF4285F4),
                   ),

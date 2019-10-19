@@ -26,6 +26,7 @@ class _NextEventWidgetState extends State<NextEventWidget> {
                     "Registered Events",
                     style: TextStyle(
                         fontSize: 14.0,
+                        fontFamily: 'Product Sans',
                         color: const Color(0xFF0F9D58),
                         fontWeight: FontWeight.w600),
                   ))

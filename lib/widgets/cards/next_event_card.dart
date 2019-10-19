@@ -47,6 +47,7 @@ class _NextEventCardState extends State<NextEventCard> {
                     "DSC KIET",
                     style: TextStyle(
                         fontSize: 14.0,
+                        fontFamily: 'Product Sans',
                         fontWeight: FontWeight.w600,
                         color: const Color(0xFF707070)),
                   ),
@@ -60,6 +61,7 @@ class _NextEventCardState extends State<NextEventCard> {
                       "Sept 5, 10:00 AM - KIET Gzb",
                       style: TextStyle(
                           fontSize: 14.0,
+                          fontFamily: 'Product Sans',
                           fontWeight: FontWeight.w600,
                           color: const Color(0xFF707070)),
                     ),
