@@ -1,3 +1,4 @@
+import 'package:commudle/routes/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class NetworkErrorPage extends StatelessWidget {
@@ -34,7 +35,7 @@ class NetworkErrorPage extends StatelessWidget {
               ),
               Text(
                 "No internet connection",
-                style:Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.title,
                 textAlign: TextAlign.center,
               ),
               SizedBox(
@@ -58,7 +59,10 @@ class NetworkErrorPage extends StatelessWidget {
                     ),
                   ),
                   color: const Color(0xFF4285F4),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                  },
                 ),
               ),
             ],
