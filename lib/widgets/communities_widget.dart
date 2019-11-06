@@ -120,11 +120,12 @@ class _CommunitiesWidgetState extends State<CommunitiesWidget> {
                     ),
                   )
                 : Container(
-                    margin: EdgeInsets.only(top: 16.0, left: 20.0,bottom: 16.0),
+                    margin: EdgeInsets.only(top: 16.0,bottom: 16.0),
                     height: 100.0,
                     child: Container(
                       child: Consumer<CommunitiesProviders>(
                         builder: (_, commudata, ch) => ListView.builder(
+                          padding: EdgeInsets.only(left: 20.0),
                           itemCount: _communities.length,
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
