@@ -6,6 +6,11 @@ import 'package:commudle/widgets/cards/sessions_card.dart';
 import 'package:flutter/material.dart';
 
 class CommunityScreen extends StatefulWidget {
+  final apiLink;
+  CommunityScreen(
+    this.apiLink, {
+    Key key,
+  }) : super(key: key);
   @override
   _CommunityScreenState createState() => _CommunityScreenState();
 }
@@ -75,8 +80,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                               ),
                               Flexible(
                                 child: Container(
-                                  padding:
-                                      EdgeInsets.only(left: 12.0),
+                                  padding: EdgeInsets.only(left: 12.0),
                                   child: Text(
                                     'Developer student clubs KIET',
                                     style: Theme.of(context).textTheme.title,
