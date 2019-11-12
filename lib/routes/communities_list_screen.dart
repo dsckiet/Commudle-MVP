@@ -146,12 +146,16 @@ class _CommunitiesListScreenState extends State<CommunitiesListScreen> {
                                 padding: EdgeInsets.symmetric(horizontal: 20.0),
                                 child: InkWell(
                                   onTap: () {
-                                    // Navigator.push(
-                                    //   context,
-                                    //   MaterialPageRoute(
-                                    //     builder: (context) => CommunityScreen(),
-                                    //   ),
-                                    // );
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => CommunityScreen(
+                                            _communities[index]
+                                                .data
+                                                .links
+                                                .apiUrl),
+                                      ),
+                                    );
                                   },
                                   child: Padding(
                                     padding: EdgeInsets.only(bottom: 4.0),
