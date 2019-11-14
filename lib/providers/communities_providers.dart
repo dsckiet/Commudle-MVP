@@ -16,7 +16,7 @@ class CommunitiesProviders with ChangeNotifier {
   String _errorMsg;
   List<CommunitiesModel> _communitiesData;
   List<String> _apiUrls = [];
-  List<CommunityDetails> _communityDetails;
+  CommunityDetails _communityDetails;
 
   bool get isDataAvl {
     return _isDataAvl;
@@ -30,8 +30,8 @@ class CommunitiesProviders with ChangeNotifier {
     return [..._communitiesData];
   }
 
-  List<CommunityDetails> get communityDetails {
-    return [..._communityDetails];
+  CommunityDetails get communityDetails {
+    return _communityDetails;
   }
 
   Future<void> viewCommunities(context) async {
@@ -41,7 +41,7 @@ class CommunitiesProviders with ChangeNotifier {
       );
 
       final extractedData = json.decode(response.body);
-      print(json.decode(response.body));
+      //print(json.decode(response.body));
 
       List<CommunitiesModel> _loadedCommunitiesData = [];
       _loadedCommunitiesData = (extractedData['data']['communities'] as List)
@@ -50,16 +50,6 @@ class CommunitiesProviders with ChangeNotifier {
 
       _communitiesData = _loadedCommunitiesData;
       print(_loadedCommunitiesData.toString());
-
-      // var _loadedCommunitiesDatalength = _loadedCommunitiesData.length;
-      // // List<CommunityDetails> _loadedCommunityDetails = [];
-
-      // for (var i = 0; i < _loadedCommunitiesDatalength; i++) {
-      //   _apiUrls[i] = (_loadedCommunitiesData[i].data.links.apiUrl);
-      // }
-
-      //print(_apiUrls.toList());
-      //communitiesApiUrl();
       notifyListeners();
     } on NoSuchMethodError {
       _isDataAvl = false;
@@ -73,35 +63,22 @@ class CommunitiesProviders with ChangeNotifier {
     }
   }
 
-  Future<void> communitiesApiUrl() async {
+  Future<void> communitiesApiUrl(String apiUrl) async {
+    final url = apiUrl;
     try {
       final response = await http.get(
         url,
       );
 
       final extractedData = json.decode(response.body);
-      print(json.decode(response.body));
+      //print(json.decode(response.body));
 
-      List<CommunitiesModel> _loadedCommunitiesData = [];
-      _loadedCommunitiesData = (extractedData['data']['communities'] as List)
-          .map((i) => CommunitiesModel.fromJson(i))
-          .toList();
-
-      _communitiesData = _loadedCommunitiesData;
-      //print(_loadedCommunitiesData.toString());
-
-      int _loadedCommunitiesDatalength = _loadedCommunitiesData.length;
-      // List<CommunityDetails> _loadedCommunityDetails = [];
-
-      for (int i = 1; i <= _loadedCommunitiesDatalength; i++) {
-        _apiUrls[i] = (_loadedCommunitiesData[i].data.links.apiUrl);
-      }
-
-      print(_apiUrls.toList());
+      _communityDetails = CommunityDetails.fromJson(extractedData);
+      print(_communityDetails.toString());
 
       notifyListeners();
-      // } on NoSuchMethodError {
-      //   _isDataAvl = false;
+    } on NoSuchMethodError {
+      _isDataAvl = false;
       // } on SocketException {
       //   // Navigator.of(context).push(
       //   //      MaterialPageRoute(builder: (context) => NetworkErrorPage()));
