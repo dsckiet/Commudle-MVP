@@ -122,7 +122,7 @@ class _CommunitiesWidgetState extends State<CommunitiesWidget> {
                   )
                 : Container(
               margin:
-                        EdgeInsets.only(top: 16.0, left: 20.0, bottom: 16.0),
+                        EdgeInsets.only(top: 16.0, bottom: 16.0),
                     height: 100.0,
                     child: Container(
                       child: Consumer<CommunitiesProviders>(
