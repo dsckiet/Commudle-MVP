@@ -75,8 +75,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                               ),
                               Flexible(
                                 child: Container(
-                                  padding:
-                                      EdgeInsets.only(left: 12.0),
+                                  padding: EdgeInsets.only(left: 12.0),
                                   child: Text(
                                     'Developer student clubs KIET',
                                     style: Theme.of(context).textTheme.title,
