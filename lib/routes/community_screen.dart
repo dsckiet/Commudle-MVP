@@ -10,6 +10,7 @@ import 'package:commudle/providers/communities_providers.dart';
 
 class CommunityScreen extends StatefulWidget {
   final apiLink;
+  
   CommunityScreen(
     this.apiLink, {
     Key key,
@@ -291,7 +292,10 @@ class _CommunityScreenState extends State<CommunityScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => EventsScreen()),
+                                  builder: (context) => EventsScreen( _communityDetails.data.community
+                                                    .data.attributes.logoPath,
+                                                _communityDetails.data.community
+                                                    .data.attributes.name,)),
                             );
                           },
                           child: FittedBox(
@@ -309,7 +313,10 @@ class _CommunityScreenState extends State<CommunityScreen> {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => EventsScreen()),
+                                          builder: (context) => EventsScreen( _communityDetails.data.community
+                                                    .data.attributes.logoPath,
+                                                _communityDetails.data.community
+                                                    .data.attributes.name,)),
                                     );
                                   },
                                 ),
@@ -389,7 +396,10 @@ class _CommunityScreenState extends State<CommunityScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => TeamScreen()),
+                                  builder: (context) => TeamScreen( _communityDetails.data.community
+                                                    .data.attributes.logoPath,
+                                                _communityDetails.data.community
+                                                    .data.attributes.name,)),
                             );
                           },
                           child: FittedBox(
@@ -407,7 +417,10 @@ class _CommunityScreenState extends State<CommunityScreen> {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => TeamScreen()),
+                                          builder: (context) => TeamScreen( _communityDetails.data.community
+                                                    .data.attributes.logoPath,
+                                                _communityDetails.data.community
+                                                    .data.attributes.name,)),
                                     );
                                   },
                                 ),

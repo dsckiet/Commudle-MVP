@@ -3,11 +3,28 @@ import 'package:commudle/widgets/cards/member_card.dart';
 import 'package:flutter/material.dart';
 
 class TeamScreen extends StatefulWidget {
+  final imageLink;
+  final name;
+
+  TeamScreen(
+    this.imageLink,
+    this.name, {
+    Key key,
+  }) : super(key: key);
   @override
   _TeamScreenState createState() => _TeamScreenState();
 }
 
 class _TeamScreenState extends State<TeamScreen> {
+  String imageLink;
+  String name;
+  @override
+  void initState() {
+    imageLink = widget.imageLink;
+    name = widget.name;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,18 +72,21 @@ class _TeamScreenState extends State<TeamScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 20.0,right: 20.0,bottom: 24.0),
+                padding: EdgeInsets.only(left: 20.0, right: 20.0, bottom: 24.0),
                 child: Row(
                   children: <Widget>[
-                    Image(
-                      image: AssetImage('assets/images/temp-wtm.png'),
+                    Container(
+                      width: 60,
+                      height: 60,
+                      child: Image.network(
+                        imageLink,
+                      ),
                     ),
                     Flexible(
                       child: Container(
-                        padding:
-                        EdgeInsets.only(left: 12.0),
+                        padding: EdgeInsets.only(left: 12.0),
                         child: Text(
-                          'Developer student clubs KIET',
+                          name,
                           style: Theme.of(context).textTheme.title,
                         ),
                       ),
