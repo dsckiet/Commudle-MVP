@@ -9,12 +9,12 @@ class AboutScreen extends StatefulWidget {
   final name;
   final webUrl;
   AboutScreen(
-    this.about,
-    this.imageLink,
-    this.name,
-    this.webUrl, {
-    Key key,
-  }) : super(key: key);
+      this.about,
+      this.imageLink,
+      this.name,
+      this.webUrl, {
+        Key key,
+      }) : super(key: key);
   @override
   _AboutScreenState createState() => _AboutScreenState();
 }
