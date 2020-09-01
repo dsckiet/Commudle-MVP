@@ -3,12 +3,13 @@ import 'package:commudle/widgets/cards/event_card.dart';
 import 'package:flutter/material.dart';
 
 class EventsScreen extends StatefulWidget {
-  final imageLink;
-  final name;
+  // final imageLink;
+  // final name;
 
   EventsScreen(
-    this.imageLink,
-    this.name, {
+      // this.imageLink,
+      // this.name,
+      {
     Key key,
   }) : super(key: key);
   @override
@@ -16,13 +17,13 @@ class EventsScreen extends StatefulWidget {
 }
 
 class _EventsScreenState extends State<EventsScreen> {
-  String imageLink;
-  String name;
+  //String imageLink = "";
+  String name = 'Developer student clubs KIET';
 
   @override
   void initState() {
-    imageLink = widget.imageLink;
-    name = widget.name;
+    // imageLink = widget.imageLink;
+    // name = widget.name;
     super.initState();
   }
 
@@ -79,8 +80,8 @@ class _EventsScreenState extends State<EventsScreen> {
                     Container(
                       width: 60,
                       height: 60,
-                      child: Image.network(
-                        imageLink,
+                      child: Image(
+                        image: AssetImage('assets/images/temp-wtm.png'),
                       ),
                     ),
                     Flexible(

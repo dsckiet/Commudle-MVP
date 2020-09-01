@@ -3,12 +3,13 @@ import 'package:commudle/widgets/cards/member_card.dart';
 import 'package:flutter/material.dart';
 
 class TeamScreen extends StatefulWidget {
-  final imageLink;
-  final name;
+  // final imageLink;
+  // final name;
 
   TeamScreen(
-    this.imageLink,
-    this.name, {
+      // this.imageLink,
+      // this.name,
+      {
     Key key,
   }) : super(key: key);
   @override
@@ -16,12 +17,12 @@ class TeamScreen extends StatefulWidget {
 }
 
 class _TeamScreenState extends State<TeamScreen> {
-  String imageLink;
-  String name;
+  // String imageLink;
+  // String name;
   @override
   void initState() {
-    imageLink = widget.imageLink;
-    name = widget.name;
+    // imageLink = widget.imageLink;
+    // name = widget.name;
     super.initState();
   }
 
@@ -78,15 +79,15 @@ class _TeamScreenState extends State<TeamScreen> {
                     Container(
                       width: 60,
                       height: 60,
-                      child: Image.network(
-                        imageLink,
+                      child: Image(
+                        image: AssetImage('assets/images/temp-wtm.png'),
                       ),
                     ),
                     Flexible(
                       child: Container(
                         padding: EdgeInsets.only(left: 12.0),
                         child: Text(
-                          name,
+                          'Developer student clubs KIET',
                           style: Theme.of(context).textTheme.title,
                         ),
                       ),
