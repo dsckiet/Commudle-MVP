@@ -4,32 +4,33 @@ import 'package:flutter/material.dart';
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 
 class AboutScreen extends StatefulWidget {
-  final about;
-  final imageLink;
-  final name;
-  final webUrl;
+  // final about;
+  // final imageLink;
+  // final name;
+  // final webUrl;
   AboutScreen(
-      this.about,
-      this.imageLink,
-      this.name,
-      this.webUrl, {
-        Key key,
-      }) : super(key: key);
+      // this.about,
+      // this.imageLink,
+      // this.name,
+      // this.webUrl,
+      {
+    Key key,
+  }) : super(key: key);
   @override
   _AboutScreenState createState() => _AboutScreenState();
 }
 
 class _AboutScreenState extends State<AboutScreen> {
-  String about;
-  String imageLink;
-  String name;
-  String webUrl;
+  // String about;
+  // String imageLink;
+  // String name;
+  // String webUrl;
   @override
   void initState() {
-    about = widget.about;
-    imageLink = widget.imageLink;
-    name = widget.name;
-    webUrl = widget.webUrl;
+    // about = widget.about;
+    // imageLink = widget.imageLink;
+    // name = widget.name;
+    // webUrl = widget.webUrl;
     super.initState();
   }
 
@@ -119,15 +120,15 @@ class _AboutScreenState extends State<AboutScreen> {
                     Container(
                       width: 60,
                       height: 60,
-                      child: Image.network(
-                        imageLink,
+                      child: Image(
+                        image: AssetImage('assets/images/temp-wtm.png'),
                       ),
                     ),
                     Flexible(
                       child: Container(
                         padding: EdgeInsets.only(left: 12.0),
                         child: Text(
-                          name,
+                          'Developer student clubs KIET',
                           style: Theme.of(context).textTheme.title,
                         ),
                       ),
@@ -141,7 +142,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      about,
+                      'GDG New Delhi provides a network for people who are interested in Google\'s open source technologies and also love the spirit of sharing in the field of technology. A group of developers that foster learning of Google’s developer technologies. We organize CodeLabs, tech talks, hackathons, Extended events, devFests, and study jams. The group is free to attend and open to all who are interested in discussing and learning more about software development with tools and technologies from Google or the open-source community. Disclaimer: GDG New Delhi is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation. To learn more about the GDG program, visit https://developers.google.com/groups/',
                       style: Theme.of(context).textTheme.body1,
                     ),
                     SizedBox(
@@ -155,9 +156,10 @@ class _AboutScreenState extends State<AboutScreen> {
                         ),
                         Expanded(
                           child: GestureDetector(
-                            onTap: () => _launchURL(context, webUrl),
+                            onTap: () => _launchURL(context,
+                                "https://developers.google.com/groups/"),
                             child: Text(
-                              webUrl,
+                              "https://developers.google.com/groups/",
                               style: TextStyle(
                                 decoration: TextDecoration.underline,
                                 fontSize: 16.0,
